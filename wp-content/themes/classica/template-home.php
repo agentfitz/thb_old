@@ -5,7 +5,7 @@ Template Name: Home
 ?>
 
 <?php get_header(); ?>
-			
+
             <?php
 			 
 			$image1 = get_option('tz_slider_1'); 

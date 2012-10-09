@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 			
+			<div id="main_content">	
+			
 			<h1 class="page-title">
 				<?php 
 				global $post;
@@ -10,7 +12,8 @@
 				endif; 
 				?>
             </h1>
-            
+            		
+			
 			<!--BEGIN #primary .hfeed-->
 			<div id="primary" class="hfeed">
             		
@@ -61,5 +64,7 @@
 			</div>
 
 <?php get_sidebar(); ?>
+
+</div>
 
 <?php get_footer(); ?>

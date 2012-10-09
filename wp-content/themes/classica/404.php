@@ -5,6 +5,8 @@ header("Status: 404 Not Found");
 
 <?php get_header(); ?>
 			
+			<div id="main_content">
+			
 			<h1 class="page-title">
 				<?php _e('Error 404 - Not Found', 'framework') ?>
             </h1>
@@ -28,5 +30,7 @@ header("Status: 404 Not Found");
 			</div>
 
 <?php get_sidebar(); ?>
+
+</div>
 
 <?php get_footer(); ?>

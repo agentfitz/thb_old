@@ -85,7 +85,7 @@
     
     <div class="comments-sidebar">
     
-    	<h3><?php comment_form_title( __('Leave a Comment', 'framework'), __('Leave a Reply to %s', 'framework') ); ?></h3>
+    	<h3><?php comment_form_title( __('Express yourself!', 'framework'), __('Leave a Reply to %s', 'framework') ); ?></h3>
     	<p><?php echo stripslashes(get_option('tz_respond_description')); ?></p>
         
     </div>

@@ -410,7 +410,7 @@ $options[] = array( "name" => __('Comment Description','framework'),
 $options[] = array( "name" => __('Respond Description','framework'),
 					"desc" => __('This is a short description that is displayed near the comment form.','framework'),
 					"id" => $shortname."_respond_description",
-					"std" => "Let us know your thoughts on this post but remember to place nicely folks!",
+					"std" => "Share your thoughts! I'd love to hear what you have to say.",
 					"type" => "textarea");
 
 

@@ -2,7 +2,6 @@
 
 <!-- BEGIN html -->
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-<!-- An Orman Clark design (http://www.premiumpixels.com) - Proudly powered by WordPress (http://wordpress.org) -->
 
 <!-- BEGIN head -->
 <head>
@@ -14,8 +13,8 @@
 	<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
 	
 	<!-- Stylesheets -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic" type="text/css" />
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" type="text/css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic" type="text/css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" type="text/css" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/colours.php" type="text/css" media="screen" />
     
@@ -30,7 +29,7 @@
     
     <!-- Theme Hook -->
 	<?php wp_head(); ?>
-    
+   
 	<!--[if lte IE 7]>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/ie7.css" type="text/css" media="screen" />
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/DD_belatedPNG_0.0.8a-min.js"></script>
@@ -71,6 +70,14 @@
                     <?php } ?>
                 <!-- END #logo -->
                 </div>
+								
+								<div id="top-nav">
+									<ul>
+										<li><a href="/about">about</a></li>
+										<li><a href="/contact">contact</a></li>
+									</ul>
+								</div>
+								
                 
                 <!-- BEGIN #primary-nav -->
                 <div id="primary-nav">

@@ -53,6 +53,10 @@ if(isset($_POST['submitted'])) {
 } ?>
 
 <?php get_header(); ?>
+<?php include("includes/banner.php"); ?>
+
+<div id="main_content">
+
 			
 			<h1 class="page-title">
 				<?php 
@@ -64,8 +68,11 @@ if(isset($_POST['submitted'])) {
 					the_title();
 				endif; 
 				?>
-            </h1>
-            
+      </h1>
+      
+			
+			
+			
 			<!--BEGIN #primary .hfeed-->
 			<div id="primary" class="hfeed">
             		
@@ -75,9 +82,9 @@ if(isset($_POST['submitted'])) {
 				<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">	
                 
 					<!--BEGIN .clearfix -->
-                    <div class="clearfix">		
+          <div class="clearfix">		
     
-                        <!--BEGIN .entry-content -->
+          <!--BEGIN .entry-content -->
 					<div class="entry-content">
 
 					<?php if(isset($emailSent) && $emailSent == true) { ?>
@@ -159,5 +166,7 @@ if(isset($_POST['submitted'])) {
 			</div>
 
 <?php get_sidebar(); ?>
+
+</div>
 
 <?php get_footer(); ?>

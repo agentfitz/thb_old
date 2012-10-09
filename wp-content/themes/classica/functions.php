@@ -167,10 +167,10 @@ function is_multiple($number, $multiple)
 /*-----------------------------------------------------------------------------------*/
 
 function tz_enqueue_scripts() {
-    // Register our scripts
+  // Register our scripts
 	// comment out the next two lines to load the local copy of jQuery
 	wp_deregister_script('jquery');
-	wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js');
+	wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js');
 	wp_register_script('validation', 'http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js', 'jquery');
 	wp_register_script('superfish', get_template_directory_uri() . '/js/superfish.js', 'jquery');
 	wp_register_script('slides', get_template_directory_uri() . '/js/slides.min.jquery.js', 'jquery');
@@ -180,12 +180,14 @@ function tz_enqueue_scripts() {
 	wp_register_script('tz_custom', get_template_directory_uri() . '/js/jquery.custom.js', 'jquery', '1.0', TRUE);
 	wp_register_script('tz_shortcodes', get_template_directory_uri() . '/js/jquery.shortcodes.js', 'jquery');
 	wp_register_script('jquery-ui-custom', get_template_directory_uri() . '/js/jquery-ui-1.8.5.custom.min.js', 'jquery');
+	wp_register_script('clearfield', get_template_directory_uri() . '/js/clearfield.js', 'jquery');
 	wp_register_style( 'tz_shortcodes', get_template_directory_uri() . '/css/shortcodes.css' );
 
 	// Enqueue our scripts
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery-ui-custom');
 	wp_enqueue_script('superfish');
+	wp_enqueue_script('clearfield');
 	wp_enqueue_script('tz_custom');
 	wp_enqueue_script('tz_shortcodes'); 
 	wp_enqueue_style( 'tz_shortcodes' );
@@ -418,5 +420,10 @@ require_once (TZ_FILEPATH . '/admin/admin-interface.php');
 require_once (TZ_FILEPATH . '/functions/theme-options.php');
 require_once (TZ_FILEPATH . '/functions/theme-functions.php');
 require_once (TZ_FILEPATH . '/tinymce/tinymce.loader.php');
+
+
+function get_subscribe_thank_you_url(){
+	return "http://thehealthbits.com/subscribe-thank-you";
+}
 
 ?>
